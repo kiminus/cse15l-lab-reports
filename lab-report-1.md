@@ -1,16 +1,8 @@
-# Lab Report 1
-
-Created: January 11, 2023 12:18 PM
-Lecture: https://ucsd-cse15l-w23.github.io/week/week1/#part-5--run-some-commands
-Tags: lab report
-
-Lab Report 1
+# Lab Report 1, account setup, Windows
+[home](index.md)
 
 A17691286
-
 zilin liu
-
-# Setup for CSE 15L, windows
 
 # Environment
 
@@ -52,10 +44,9 @@ After login, you can find your account shown here:
 - your terminal should look like this: `PS C:\Users\ <*your user name>*> ssh <*the course specific account name>*[@ieng6.ucsd.edu](mailto:cs15lwi23akl@ieng6.ucsd.edu)`
 1. enter your course specific password (or your SSO password, by default)
 
-<aside>
-💡 The terminal will not display the password you entered. **DONT paste your password use `control + v`, it will input ^V, not your clipboard. Use right click instead**
 
-</aside>
+> 💡 The terminal will not display the password you entered. **DONT paste your password use `control + v`, it will input ^V, not your clipboard. Use right click instead**
+
 
 if you login successfully, your terminal should look like that: 
 
