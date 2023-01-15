@@ -40,9 +40,9 @@ After login, you can find your account shown here:
 # Connect to a Remote Server
 
 1. open windows PowerShell (you can type `window powershell` in computer search bar and open it)
-2. enter this command:`ssh *<the course specific account name>*[@ieng6.ucsd.edu]`
-- your terminal should look like this: `PS C:\Users\ <*your user name>*> ssh <*the course specific account name>*[@ieng6.ucsd.edu]`
-1. enter your course specific password (or your SSO password, by default)
+2. enter this command:`ssh _<the course specific account name>_ [@ieng6.ucsd.edu]`
+- your terminal should look like this: `PS C:\Users\ <*your user name*> ssh <*the course specific account name*>[@ieng6.ucsd.edu]`
+4. enter your course specific password (or your SSO password, by default)
 
 
 > 💡 The terminal will not display the password you entered. **DONT paste your password use `control + v`, it will input ^V, not your clipboard. Use right click instead**
