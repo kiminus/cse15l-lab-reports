@@ -30,11 +30,11 @@ You can find your CSE 15L account here:
 
 In that page, enter your username (the prefix of your email address, before `@`), and your student ID
 
-![Untitled](Lab%20Report%201%205d3c4c9169b5461ba6ed0b9a873df0e6/Untitled.png)
+![Untitled](Lab Report 1 sources/Untitled.png)
 
 After login, you can find your account shown here: 
 
-![Untitled](Lab%20Report%201%205d3c4c9169b5461ba6ed0b9a873df0e6/Untitled%201.png)
+![Untitled](Lab Report 1 sources/Untitled 1.png)
 
 ### Forgot password?
 
@@ -59,7 +59,7 @@ After login, you can find your account shown here:
 
 if you login successfully, your terminal should look like that: 
 
-![Untitled](Lab%20Report%201%205d3c4c9169b5461ba6ed0b9a873df0e6/Untitled%202.png)
+![Untitled](Lab Report 1 sources/Untitled 2.png)
 
 # Run some remote commands:
 
@@ -90,7 +90,7 @@ try to run some remote commands like these:
 
 your terminal should look like this:
 
-![Untitled](Lab%20Report%201%205d3c4c9169b5461ba6ed0b9a873df0e6/Untitled%203.png)
+![Untitled](Lab Report 1 sources/Untitled%203.png)
 
 ### logout
 
@@ -104,9 +104,9 @@ you may use key combination `ctrl+D` or runtime command `exit` to logout
 
 1. create a new repository, and name it `cse15l-lab-reports`
 
-![Untitled](Lab%20Report%201%205d3c4c9169b5461ba6ed0b9a873df0e6/Untitled%204.png)
+![Untitled](Lab Report 1 sources/Untitled%204.png)
 
-![Untitled](Lab%20Report%201%205d3c4c9169b5461ba6ed0b9a873df0e6/Untitled%205.png)
+![Untitled](Lab Report 1 sources/Untitled%205.png)
 
 ## Make website
 
