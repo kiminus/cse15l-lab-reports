@@ -34,6 +34,7 @@ then, right click the empty space in the explore section, and in the dropdown me
 ![create file](<Lab Report 1 sources/create_file.png>) 
 
 finally, rename the file name to your preference, and change the file extension to `.md`, which is the markdown file
+
 ![make file](<Lab Report 1 sources/make_file.png>)
 
 ## Find your CSE 15L course account
@@ -117,9 +118,8 @@ copy the file `HW1.pdf` located at the `~/downloads` folder to the
 2. then, we need to make sure the destination directory path exist,
    1. we can login to the remote server and use `mkdir -p <path>` to create a
       path, and copy the file regularly
-   - ****************\*\*\*\*****************we have to use -p here because the
-     parent directory does not exist, and `-p` will create all directories even
-     if they do not exist\*\*
+   - we have to use -p here because the parent directory does not exist, and `-p` will create all directories even
+     if they do not exist
 3. then, we need to copy that file
    1. we have two ways to locate that file
       1. change the wd to downloads and reference the file with its name
@@ -127,7 +127,7 @@ copy the file `HW1.pdf` located at the `~/downloads` folder to the
 4. finally use the `scp` statement
 
 <aside>
-💡 Note we **cannot** use `cp` command to copy a file to a remote server. we have to use `scp` to copy to a remote server
+Note we CANNOT use cp command to copy a file to a remote server. we have to use scp to copy to a remote server
 
 </aside>
 
