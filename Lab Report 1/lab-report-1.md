@@ -1,7 +1,7 @@
 # Lab Report 1, account setup, Windows
 
-[home](index.md) visit this page
-https://kiminus.github.io/cse15l-lab-reports/Lab%20Report%201/lab-report-1
+[home](index.md)
+visit this page at https://kiminus.github.io/cse15l-lab-reports/Lab%20Report%201/lab-report-1
 
 A17691286 zilin liu
 
@@ -21,8 +21,8 @@ download VS code version based on your OS. Click `download` button to download:
 ![Download VS](<Lab Report 1 sources/vs_download.png>)
 
 Follow the instructions on the setup window and complete the installation.
-![installation Image](<Lab Report 1 sources/installation.png>) _I cannot change
-the installation language to English_
+![installation Image](<Lab Report 1 sources/installation.png>)
+_I cannot change the installation language to English_
 
 ### Create a new Project
 
