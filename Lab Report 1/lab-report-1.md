@@ -1,6 +1,7 @@
 # Lab Report 1, account setup, Windows
 
-[home](index.md)
+[home](index.md) visit this page
+https://kiminus.github.io/cse15l-lab-reports/Lab%20Report%201/lab-report-1
 
 A17691286 zilin liu
 
@@ -17,23 +18,30 @@ First download the VS code use this link:
 
 download VS code version based on your OS. Click `download` button to download:
 
-![Download VS](<Lab Report 1 sources/vs_download.png>) 
+![Download VS](<Lab Report 1 sources/vs_download.png>)
 
 Follow the instructions on the setup window and complete the installation.
+![installation Image](<Lab Report 1 sources/installation.png>) _I cannot change
+the installation language to English_
 
 ### Create a new Project
 
-Try to use VS code to write your lab report! 
-### How to do it? 
-First create your lab report folder then open VS code, and use vs code to open this folder
+Try to use VS code to write your lab report!
 
-![open_folder](<Lab Report 1 sources/open_folder.png>) 
+### How to do it?
 
-then, right click the empty space in the explore section, and in the dropdown menu select `New File`
+First create your lab report folder then open VS code, and use vs code to open
+this folder
 
-![create file](<Lab Report 1 sources/create_file.png>) 
+![open_folder](<Lab Report 1 sources/open_folder.png>)
 
-finally, rename the file name to your preference, and change the file extension to `.md`, which is the markdown file
+then, right click the empty space in the explore section, and in the dropdown
+menu select `New File`
+
+![create file](<Lab Report 1 sources/create_file.png>)
+
+finally, rename the file name to your preference, and change the file extension
+to `.md`, which is the markdown file
 
 ![make file](<Lab Report 1 sources/make_file.png>)
 
@@ -118,8 +126,8 @@ copy the file `HW1.pdf` located at the `~/downloads` folder to the
 2. then, we need to make sure the destination directory path exist,
    1. we can login to the remote server and use `mkdir -p <path>` to create a
       path, and copy the file regularly
-   - we have to use -p here because the parent directory does not exist, and `-p` will create all directories even
-     if they do not exist
+   - we have to use -p here because the parent directory does not exist, and
+     `-p` will create all directories even if they do not exist
 3. then, we need to copy that file
    1. we have two ways to locate that file
       1. change the wd to downloads and reference the file with its name
@@ -127,7 +135,7 @@ copy the file `HW1.pdf` located at the `~/downloads` folder to the
 4. finally use the `scp` statement
 
 <aside>
-Note we CANNOT use cp command to copy a file to a remote server. we have to use scp to copy to a remote server
+> Note we CANNOT use cp command to copy a file to a remote server. we have to use scp to copy to a remote server
 
 </aside>
 
