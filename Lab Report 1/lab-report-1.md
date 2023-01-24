@@ -16,18 +16,25 @@ First download the VS code use this link:
 [Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/)
 
 download VS code version based on your OS. Click `download` button to download:
-![Download VS](<Lab Report 1 sources/vs_download.png>) Follow the instructions
-on the setup window and complete the installation.
+
+![Download VS](<Lab Report 1 sources/vs_download.png>) 
+
+Follow the instructions on the setup window and complete the installation.
 
 ### Create a new Project
 
-Try to use VS code to write your lab report! How to do it? First create your
-lab report folder then open VS code, and use vs code to open this folder
-![open_folder](<Lab Report 1 sources/open_folder.png>) then, right click the
-empty space in the explore section, and in the dropdown menu select `New File`
-![create file](<Lab Report 1 sources/create_file.png>) finally, rename the file
-name to your preference, and change the file extension to `.md`, which refer to
-a markdown file ![make file](<Lab Report 1 sources/make_file.png>)
+Try to use VS code to write your lab report! 
+### How to do it? 
+First create your lab report folder then open VS code, and use vs code to open this folder
+
+![open_folder](<Lab Report 1 sources/open_folder.png>) 
+
+then, right click the empty space in the explore section, and in the dropdown menu select `New File`
+
+![create file](<Lab Report 1 sources/create_file.png>) 
+
+finally, rename the file name to your preference, and change the file extension to `.md`, which is the markdown file
+![make file](<Lab Report 1 sources/make_file.png>)
 
 ## Find your CSE 15L course account
 
