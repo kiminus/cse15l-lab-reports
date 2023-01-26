@@ -15,7 +15,7 @@ visit all lab reports here:
 https://kiminus.github.io/cse15l-lab-reports/ 
 
 visit this lab report here: 
-https://kiminus.github.io/cse15l-lab-reports/Lab_Report_Week_3
+https://kiminus.github.io/cse15l-lab-reports/Lab_Report_2/Lab_Report_2
 
 # The String Server
 
