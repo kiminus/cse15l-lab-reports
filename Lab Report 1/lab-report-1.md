@@ -26,6 +26,7 @@ Follow the instructions on the setup window and complete the installation.
 ![installation Image](<Lab Report 1 sources/installation.png>)
 
 _I cannot change the installation language to English_
+![complete](Lab Report 1 sources/installation.png)
 
 ### Create a new Project
 
@@ -117,7 +118,11 @@ try to run some remote commands like these:
 your terminal should look like this:
 
 ![Untitled](<Lab Report 1 sources/Untitled%203.png>)
-
+- the `ls` means to list all files
+   - `-l` means list one file per line
+   - `-a` means all files
+   - `-t` means sort by modification time
+- so the command means: list all files in the current directory by the modification time, and list one file per line
 ### Example 2: copy file to remote server (_REMOTE CONNECTING_)
 
 copy the file `HW1.pdf` located at the `~/downloads` folder to the
