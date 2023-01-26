@@ -5,7 +5,7 @@ author: zilin
 ___
 ## Lab reports
 ### Lab Report 1
-[Lab Report 1](https://kiminus.github.io/cse15l-lab-reports/Lab_Report_1/Lab_Report_1)
+[Lab Report 1](https://kiminus.github.io/cse15l-lab-reports/Lab_Report_1/lab-report-1)
 
 ### Lab Report 2
 [Lab Report 2](https://kiminus.github.io/cse15l-lab-reports/Lab_Report_2/Lab_Report_2)
