@@ -11,7 +11,9 @@ Lab Report 2
 
 1/27
 
-visit all lab reports here:
+**the reason why I put URL explicitly is that you can type the url to see my lab report**
+here is an example of inline url: 
+[visit all lab reports here:](https://kiminus.github.io/cse15l-lab-reports/)
 https://kiminus.github.io/cse15l-lab-reports/ 
 
 visit this lab report here: 
@@ -140,6 +142,22 @@ public void testReverseInPlaceNull() {
 }
 ```
 
+The failure symptom: 
+```
+PS P:\Coding\Draft\lab3> java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore ArrayTests
+JUnit version 4.13.2
+...E
+Time: 0.008
+There was 1 failure:
+1) testReverseInPlaceNull(ArrayTests)
+java.lang.NullPointerException: Cannot read the array length because "<parameter1>" is null
+        at ArrayExamples.reverseInPlace(ArrayExamples.java:7)
+        at ArrayTests.testReverseInPlaceNull(ArrayTests.java:14)
+
+FAILURES!!!
+Tests run: 3,  Failures: 1
+```
+
 ### Swap bug:
 
 - the implementation does not actually swap the values, it merely overwrites the smaller index element with the corresponding larger index value.
@@ -155,6 +173,33 @@ public void testReverseInPlaceGeneral() {
 }
 ```
 
+Sympton: 
+```
+JUnit version 4.13.2
+...E
+Time: 0.008
+There was 1 failure:
+1) testReverseInPlaceGeneral(ArrayTests)
+arrays first differed at element [2]; expected:<3> but was:<1>
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)
+        at org.junit.Assert.internalArrayEquals(Assert.java:534)
+        at org.junit.Assert.assertArrayEquals(Assert.java:418)
+        at org.junit.Assert.assertArrayEquals(Assert.java:429)
+        at ArrayTests.testReverseInPlaceGeneral(ArrayTests.java:23)
+        ... 32 trimmed
+Caused by: java.lang.AssertionError: expected:<3> but was:<1>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at org.junit.Assert.assertEquals(Assert.java:146)
+        at org.junit.internal.ExactComparisonCriteria.assertElementsEqual(ExactComparisonCriteria.java:8)
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)
+        ... 38 more
+
+FAILURES!!!
+Tests run: 3,  Failures: 1
+```
 ### For loop Termination condition bug
 
 - the original implementation will swap values from i = 0 to the end element of the array, so each element is actually swapped twice, which maintained the original order
@@ -171,12 +216,41 @@ public void testReverseInPlaceGeneralOdd() {
 }
 
 @Test
-public void testReverseInPlaceGeneralEven() {
-    int[] input = {3, 4, 1, 2};
+public void testReverseInPlaceGeneralPalindrome() {
+    int[] input = {1,2,2,1};
     ArrayExamples.reverseInPlace(input);
     System.out.println(Arrays.toString(input));
-    assertArrayEquals(new int[]{2, 1, 4, 3}, input); //actual 3,4,1,2
+    assertArrayEquals(new int[]{1,2,2,1}, input); //passed 
 }
+```
+Symptom: 
+```
+JUnit version 4.13.2
+...[1, 2, 2, 1]
+.[1, 4, 1]
+E
+Time: 0.008
+There was 1 failure:
+1) testReverseInPlaceGeneralOdd(ArrayTests)
+arrays first differed at element [2]; expected:<3> but was:<1>
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)
+        at org.junit.Assert.internalArrayEquals(Assert.java:534)
+        at org.junit.Assert.assertArrayEquals(Assert.java:418)
+        at org.junit.Assert.assertArrayEquals(Assert.java:429)
+        at ArrayTests.testReverseInPlaceGeneralOdd(ArrayTests.java:27)
+        ... 32 trimmed
+Caused by: java.lang.AssertionError: expected:<3> but was:<1>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at org.junit.Assert.assertEquals(Assert.java:146)
+        at org.junit.internal.ExactComparisonCriteria.assertElementsEqual(ExactComparisonCriteria.java:8)
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)
+        ... 38 more
+
+FAILURES!!!
+Tests run: 4,  Failures: 1
 ```
 
 ### Correct implementation:
@@ -194,6 +268,8 @@ static void swap(int a, int b, int[] arr) {
   arr[b] = temp;
 }
 ```
+
+
 
 # Part 3
 
