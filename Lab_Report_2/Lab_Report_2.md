@@ -15,11 +15,19 @@ Lab Report 2
 
 here is an example of inline url: 
 
+
+
 [visit all lab reports here:](https://kiminus.github.io/cse15l-lab-reports/)
+
+
 
 https://kiminus.github.io/cse15l-lab-reports/ 
 
+
+
 visit this lab report here: 
+
+
 https://kiminus.github.io/cse15l-lab-reports/Lab_Report_2/Lab_Report_2
 
 # The String Server
