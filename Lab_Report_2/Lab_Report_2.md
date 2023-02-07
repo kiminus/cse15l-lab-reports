@@ -11,21 +11,14 @@ Lab Report 2
 
 1/27
 
-**the reason why I put URL explicitly is that you can type the url to see my lab report**
-
-here is an example of inline url: 
-
 
 
 [visit all lab reports here:](https://kiminus.github.io/cse15l-lab-reports/)
 
 
 
+[visit this lab report here:]( https://kiminus.github.io/cse15l-lab-reports/Lab_Report_2/Lab_Report_2 )
 
-visit this lab report here: 
-
-
-https://kiminus.github.io/cse15l-lab-reports/Lab_Report_2/Lab_Report_2
 
 # The String Server
 
