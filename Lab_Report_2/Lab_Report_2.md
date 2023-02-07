@@ -21,9 +21,6 @@ here is an example of inline url:
 
 
 
-https://kiminus.github.io/cse15l-lab-reports/ 
-
-
 
 visit this lab report here: 
 
