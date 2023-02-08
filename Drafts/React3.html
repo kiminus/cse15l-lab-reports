@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        class Child extends React.Component {
+            state = {
+                counter: this.props.counter
+            };
+            render() {
+                return (
+                    <div>
+                        <div> counter value from parent state: {this.state.counter} </div>
+                        <div> counter value from parent props: {this.props.counter} </div>
+                    </div>
+                )
+            }
+        }
+
+        class App extends React.Component {
+            constructor(props) {
+                //the prop is inherited from the parent component
+                super(props);
+                //state is an object that holds some information that may change over the lifetime of the component
+                //because the state is different for different instances of the component, so we must use this
+                //create new variables of the component object
+                this.state = {
+                    //the counter key value pair
+                    counter: 0,
+                    words: "Hello world"
+                };
+                this.increment = this.increment.bind(this); //we must bind this method to the component object, so in the button this.click will refer to the method, rather than undefined
+            }
+            //second way to create a state object:
+            /*
+                state = {
+                    //the counter key value pair
+                    counter: 0,
+                    words: "Hello world"
+                };
+            */
+            render() {
+                return (
+                    <div>
+                        <h1>current counter: {this.state.counter}</h1>
+                        <button onClick={this.increment}>Increment</button>
+                        <button onClick={() => {
+                            this.setState({
+                                counter: this.state.counter + 10
+                            });
+                        }}>Increment by 10</button>
+                        <button onClick={this.decrement}>decrement</button>
+
+                        <Child counter={this.state.counter} />
+                    </div>
+                )
+            }
+            increment() {
+                //this.setState is a method that updates the state of the component
+                //it takes an object as an argument
+                //the object will be merged with the current state
+                this.setState({
+                    counter: this.state.counter + 1
+                });
+                /*
+                    this is equivalent to:
+                    const newState = {
+                        counter: this.state.counter + 1,
+                    };
+                    this.setState(newState);
+                */
+            }
+            decrement = () => {
+                this.setState({
+                    counter: this.state.counter - 1
+                });
+            };
+        }
+        //render the App component into the root div
+        ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+</body>
+
+</html>
