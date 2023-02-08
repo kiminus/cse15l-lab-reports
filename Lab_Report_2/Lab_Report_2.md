@@ -143,7 +143,12 @@ public void testReverseInPlaceNull() {
 ```
 
 The failure symptom: 
+
+
 A `NullPointerException` is thrown
+
+
+
 ```
 PS P:\Coding\Draft\lab3> java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore ArrayTests
 JUnit version 4.13.2
@@ -175,7 +180,11 @@ public void testReverseInPlaceGeneral() {
 ```
 
 Symptom/output: 
+
+
 We expect 1, 4, 3, but was [1, 4, 1]
+
+
 ```
 JUnit version 4.13.2
 ...E
@@ -207,7 +216,9 @@ Tests run: 3,  Failures: 1
 - The original implementation will swap values from i = 0 to the end element of the array, so each element is actually swapped twice, which maintained the original order
 - So if the input is a **non-palindrome** array, it will fail
 - So the for loop should terminates when `i<arr.length/2` (detail see below)
-<aside> <br>Assume all other issues are resolved</br> </aside>
+
+
+<aside> <br>Assume all other issues are resolved<br> </aside>
 
 ```java
 @Test
@@ -227,7 +238,10 @@ public void testReverseInPlaceGeneralPalindrome() {
 }
 ```
 Symptom: 
-- Input: 3, 4, 1, expected: 1,4,3, but was [3, 4, 1]
+
+Input: 3, 4, 1, expected: 1,4,3, but was [3, 4, 1]
+
+
 ```
 JUnit version 4.13.2
 ...[1, 2, 2, 1]
