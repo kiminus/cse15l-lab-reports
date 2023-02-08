@@ -26,7 +26,8 @@ Follow the instructions on the setup window and complete the installation.
 ![installation Image](<Lab Report 1 sources/installation.png>)
 
 _I cannot change the installation language to English_
-![complete](Lab Report 1 sources/installation.png)
+
+![complete](<Lab Report 1 sources/installation_complete.png>)
 
 ### Create a new Project
 
