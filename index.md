@@ -10,6 +10,10 @@ author: zilin
 ### Lab Report 2
 [Lab Report 2](https://kiminus.github.io/cse15l-lab-reports/Lab_Report_2/Lab_Report_2)
 
+
+### Lab Report 3
+[Lab Report 3](https://kiminus.github.io/cse15l-lab-reports/Lab_Report_3/Lab_Report_3)
+
 ### week 0
 [TEST ONLY] [week 1 lab report link to markdown file](lab-report-week1.md)    
 [TEST ONLY] [week 1 lab report link to online web page](https://kiminus.github.io/cse15l-lab-reports/lab-report-week1)   
