@@ -325,6 +325,9 @@ $ find . -type f -name "*.txt" -exec grep -il assemble {} \; # search all txt fi
 
 Another example: We want to find the **total number of occurrence** of the word `world` in all `txt` files under the current directory
 
+Given the File directory:
+![Untitled](%5BTurn%20in%5D%20Lab%20Report%203%205a5ee8edd6cb410e9a6ce9849faf3bf4/Untitled%205.png)
+
 - we can use `grep` command `grep -wc "world" [files]`   to count the number of occurrence of a string in each file
     - `-wc` gives a count of occurrences in a set of files.
 - so the command looks like:
@@ -341,5 +344,32 @@ $ find ./ -name "*.txt" -type f -exec grep -wc "world" {} \; #find all .txt file
 3
 1 #ch15.txt world count 
 ```
+--- 
 
-![Untitled](%5BTurn%20in%5D%20Lab%20Report%203%205a5ee8edd6cb410e9a6ce9849faf3bf4/Untitled%205.png)
+This command is equivalent to traverse each found file in a loop and print the number of ocuurance of `world` in a `.sh` script. Here is an example of this: 
+
+In the `FileCount.sh`, which is located under the root folder: 
+
+```bash
+FILES=`find . -name "*.txt" -type f` # find all files and store in the files set
+for FILE in $FILES # iterate through every file in the set
+do
+  echo "in $FILE: `grep -wc "world" $FILE`" # print the file name, and the word count
+done # end of loop
+```
+
+To run this script, we use this bash command: 
+```bash
+# the current working directory is skill-demo1-data/written_2/non-fiction/OUP/Abernathy
+$ bash ../../../../FileCount.sh #navigate to where the bash script located. 
+in ./ch1.txt: 4 
+in ./ch14.txt: 3
+in ./ch15.txt: 2
+in ./ch2.txt: 1
+in ./ch3.txt: 3
+in ./ch6.txt: 2
+in ./ch7.txt: 4
+in ./ch8.txt: 3
+in ./ch9.txt: 1
+```
+
