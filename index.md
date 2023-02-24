@@ -16,7 +16,7 @@ author: zilin
 
 ### Lab Report 3
 
-[Lab Report 3](https://kiminus.github.io/cse15l-lab-reports/Lab_Report_3/lab-report-3)
+[Lab Report 3](https://kiminus.github.io/cse15l-lab-reports/Lab_Report_3/lab-report_3)
 
 ### Lab Report 4
 
