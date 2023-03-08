@@ -1,17 +1,14 @@
 # [Turn in] Lab Report 5
 
-Created: March 8, 2023 7:19 AM
-Tags: lab report
-
-**********This lab report is about the `[grader.sh](http://grader.sh)` file in Lab 6**
+**This lab report completed and analysized the `grader.sh` file in Lab 6**
 
 [view all reports](https://kiminus.github.io/cse15l-lab-reports/)
 
 [view this lab report](https://kiminus.github.io/cse15l-lab-reports/Lab_Report_5/Lab_Report_5) 
 
-download this grader repository here: https://github.com/kiminus/grader-review-kiminus
+[download this grader repository here](https://github.com/kiminus/grader-review-kiminus)
 
-### The `[grader.sh](http://grader.sh)` file with full explanations:
+### The `grader.sh` file with full explanations:
 
 ```bash
 #modify this environment variable based on the local operating system
@@ -142,7 +139,7 @@ exit 0;
 
 ### wrong but is likely to get full scores
 
-The `ListExamples.java`:
+`ListExamples.java`:
 
 ```java
 import java.util.ArrayList;
@@ -205,9 +202,9 @@ However, this script will likely to fail if called multiple times in one method
 
 ---
 
-### One that is mostly correct but crashes the grader and doesn’t give a nice error back
+### (Cheater?) One that is mostly correct but crashes the grader and doesn’t give a nice error back
 
-The `[ListExamples.java](http://ListExamples.java)` : 
+`ListExamples.java` : 
 
 ```java
 import java.util.List;
@@ -241,7 +238,7 @@ it passed all the tests, but it cheated the tester, because the grader only look
 ## Server On!
 
 1. in the `grade.sh`, modify the `CPATH` to `CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'`
-2. then in the terminal, compile the server files: `javac [Server.java](http://Server.java) GradeServer.java`
+2. then in the terminal, compile the server files: `javac Server.java GradeServer.java`
 3. run the server: `java GradeServer 5500`
 4. open the server in the browser, and grade the submission: `.../grade?repo=<url>`
 
